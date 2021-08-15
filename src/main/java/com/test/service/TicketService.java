@@ -20,7 +20,7 @@ public interface TicketService {
 	// Tim kiem theo so dien thoai khach hang
 	List<Ticket> findByPhoneNumber(String phoneNumber);
 	// Tim kiem theo id
-	Optional<Ticket> finById(int id);
+	Optional<Ticket> findById(int id);
 	// Tim kiem theo thoi gian xu ly
 	List<Ticket> findByEndTime(Date fromTime, Date endTime);
 }

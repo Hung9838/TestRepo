@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.test.dao.TicketDao;
 import com.test.entity.Ticket;
 import com.test.service.TicketService;
 
+@Service
 public class TicketServiceImpl implements TicketService{
 	
 	@Autowired 
@@ -46,7 +48,7 @@ public class TicketServiceImpl implements TicketService{
 	}
 
 	@Override
-	public Optional<Ticket> finById(int id) {
+	public Optional<Ticket> findById(int id) {
 		return ticketDao.findById(id);
 	}
 

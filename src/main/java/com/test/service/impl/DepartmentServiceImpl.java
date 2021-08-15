@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.test.dao.DepartmentDao;
 import com.test.entity.Department;
 import com.test.service.DepartmentService;
 
+@Service
 public class DepartmentServiceImpl implements DepartmentService{
 	@Autowired
 	DepartmentDao departmentDao;
